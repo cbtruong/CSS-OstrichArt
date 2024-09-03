@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 31em;
+    height: 31em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ostrich::before{
+    content: '';
+    position: absolute;
+    top: -12.5em;
+    left: -30em;
+    width: 25em;
+    height: 12.5em;
+    background-color: #362C2C;
+    border-top-left-radius: 50em;
+    border-top-right-radius: 50em;
+    z-index: 0;
+}
+.ostrich::after{
+    position: absolute;
+    top: -4em;
+    left: -20em;
+    content: '';
+    width: 11.125em;
+    height: 5.375em;
+    background: #C3BDB8;
+    border-bottom-left-radius: 50em;
+    border-bottom-right-radius: 50em;
+    z-index: 1;
+}
+.ostrich{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    content: '';
+    border: 5em solid transparent;
+    z-index: -1;
+    border-left: 7em solid #C3BDB8;
+    border-bottom: 0em solid transparent;
+}
+
+/* ---------------- Head ----------------- */
+.head{
+    position: absolute;
+    top: 2.2em;
+    left: 0.2em;
+    width: 3em;
+    height: 21.375em;
+    background: #C3BDB8;
+    border-radius: 20em;
+    z-index: -1;
+}
+.head::before{
+    content: '';
+    position: absolute;
+    width: 0.75em;
+    height: 0.75em;
+    background: black;
+    border-radius: 20em;
+    top: 1.5em;
+    left: 1.1em;
+}
+.head::after{
+    content: '';
+    position: absolute;
+    top: 2em;
+    left: -2.9em;
+    border: 4em solid transparent;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-right: 3em solid #F27777;
+    border-left: 0em solid transparent;
+    z-index: -1;
+}
+
+/* ---------------------leg------------ */
+.leg{
+    width: 1.75em;
+    height: 16em;
+    background: #C3BDB8;
+    position: absolute;
+    top: 23.5em;
+    left: 10em;
+    box-shadow: 6em 0 0  #C3BDB8;
+    z-index: -10;
+}
+.leg::before{
+    position: absolute;
+    top: 5em;
+    left: -0.7em;
+    content: '';
+    width: 3em;
+    height: 3em;
+    background: #C3BDB8;
+    border-radius: 100%;
+    box-shadow: 6em 0 0  #C3BDB8;
+}
+.leg::after{
+    position: absolute;
+    top: 15.5em;
+    left: -4.25em;
+    content: '';
+    height: 1.75em;
+    width: 6em;
+    background: #C3BDB8;
+    box-shadow: 6em 0 0  #C3BDB8;
+}
+@media screen and (max-width:1280px) {
+    body{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1024px) {
+    body{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:500px) {
+    body{
+        font-size: 10px;
+    }
+}
